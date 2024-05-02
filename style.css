@@ -1,14 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-:root {
-    --dark-primary:#1b1f24;
-    --primary:#12bdff;
-}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --dark-primary:#1b1f24;
+    --primary:#12bdff;
 }
 
 body{
@@ -24,30 +26,36 @@ header{
     align-items: center;
 }
 
+/* logo */
 .logo{
     color: var(--primary);
     font-weight: bold;
     letter-spacing: 5px;
     font-family: "Nunito Sans", sans-serif;
+   
+}
+header a{
+    text-decoration: none;
 }
 
-ul{
+/*nav*/
+header ul{
     display: flex;
     list-style: none;
 }
-ul li{
+header ul li{
     margin-right: 20px;
 }
-ul li a{
+header ul li a{
     color: white;
     text-decoration: none;
+    font-weight: 600
 }
-ul li a:hover{
+header ul li a:hover{
     color: var(--primary);
 }
 
 /* header button*/
-
 .cvbtn{
     padding: 10px 20px;
     font-weight:bolder;
@@ -55,6 +63,7 @@ ul li a:hover{
     border: 1px solid var(--primary);
     color: var(--primary);
     border-radius: 5px;
+    cursor: pointer;
 }
 .cvbtn:hover{
 
@@ -62,3 +71,63 @@ ul li a:hover{
     color: white;
 }
 
+/*section*/
+.navi{
+    color: var(--primary);
+}
+
+section.hero{
+    background-color: var(--dark-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 180px 0px 180px;
+}
+.hero-title{
+    font-size: 40px;
+}
+.social-icons{
+    margin: 20px 0px;
+
+}
+.social-icons li{
+    margin-right: 15px;
+}
+ul.social-icons{
+    list-style:none;
+    display: flex;
+}
+.social-icons li > a:hover{
+    color: var(--primary);
+}
+.social-icons li > a{
+    text-emphasis: none;
+    color: white;
+}
+/* hero-button*/
+.btn1{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary);
+    font-weight: 300;
+    margin-right: 5px;
+}
+.btn1:hover{
+    background-color: #f1fafd;
+}
+.btn2{
+    padding: 10px 20px;
+    border-radius: 5px;
+   border: 1px solid var(--primary);
+    cursor: pointer;
+    background-color:var(--dark-primary);
+    color: var(--primary);
+    font-weight: 300;
+    margin-right: 5px;
+}
+.btn2:hover{
+    background-color: var(--primary);
+    color: white;
+}
