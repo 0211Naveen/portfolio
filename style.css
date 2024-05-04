@@ -131,3 +131,59 @@ ul.social-icons{
     background-color: var(--primary);
     color: white;
 }
+
+/*about*/
+
+.about{
+    background-color: #22282f;
+    color: white;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about img{
+    width: 350px;
+    height: 350px;
+    border-radius:50%;
+    border: 2px solid var(--primary);
+    box-shadow: 3px 5px 15px #035060;
+}
+.about-desc{
+    margin-left: 100px;
+    max-width: 450px;
+    
+}
+.about-desc h4{
+    font-size: 28px;
+}
+.about-desc ul{
+    padding: 3px;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.about-desc li{
+  margin-bottom: 8px;
+  color: gray;
+    
+}
+.about-desc li > strong{
+    color: white;
+      
+}
+.about-desc h4 >span{
+    color: var(--primary);
+}
+.about-desc li > a{
+    color: gray;
+    text-decoration: none;
+      
+}
+.about-desc li > a:hover{
+    color: var(--primary);
+    
+      
+}
