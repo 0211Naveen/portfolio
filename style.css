@@ -187,3 +187,68 @@ ul.social-icons{
     
       
 }
+/*my works*/
+
+.work{
+    background-color: var(--dark-primary);
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+.work-title{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.work-title span{
+    color: var(--primary);
+}
+
+.work-box1{
+    background-color: #22282f;
+    padding: 60px 30px;
+    max-width: 300px;
+    text-align: left;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+.work-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.work-box1:hover{
+    background-color: #101214;
+    cursor: pointer;
+}
+.work-box1 p{
+    color: rgb(250, 238, 238);
+    font-size: 14px;
+    margin-top: 10px;
+}
+.work-box1 a{
+    color: rgb(161, 145, 145);
+    font-size: 14px;
+    padding-top: 10px;
+}
+.b1 p{
+    margin-top: 10px;
+
+}
+.b1{
+    margin-top: 15px;
+}
+.at{
+    margin-top: 10px;
+  
+}
+
+.work-icon{
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 50%;
+}
+.work-icon :hover{
+    color: #1380ac;
+}
