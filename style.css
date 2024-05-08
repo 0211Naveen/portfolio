@@ -231,6 +231,8 @@ ul.social-icons{
     color: rgb(161, 145, 145);
     font-size: 14px;
     padding-top: 10px;
+    list-style: none;
+    text-decoration: none;
 }
 .b1 p{
     margin-top: 10px;
@@ -241,6 +243,7 @@ ul.social-icons{
 }
 .at{
     margin-top: 10px;
+    
   
 }
 
@@ -251,4 +254,50 @@ ul.social-icons{
 }
 .work-icon :hover{
     color: #1380ac;
+}
+
+/*contact*/
+
+.contact{
+    background-color: #22282f;
+    padding: 40px;
+    color: white;
+    text-align: center;
+
+}
+.contact h4{
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: 900;
+}
+.contact h4 span{
+    color: var(--primary);
+}
+.contact div > input,textarea{
+    padding: 5px 10px;
+    outline: none;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    font-family: "Nunito Sans", sans-serif;
+    color: black;
+
+}
+
+
+/*fooetr*/
+
+footer{
+    background-color: var(--dark-primary);
+    color: gray;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--primary);
 }
