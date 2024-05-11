@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root {
     --dark-primary:#1b1f24;
     --primary:#12bdff;
@@ -24,6 +28,10 @@ header{
     display:flex;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    
+  
 }
 
 /* logo */
@@ -82,6 +90,7 @@ section.hero{
     display: flex;
     align-items: center;
     padding: 20px 180px 0px 180px;
+    
 }
 .hero-title{
     font-size: 40px;
@@ -211,8 +220,10 @@ ul.social-icons{
     text-align: left;
     border-radius: 10px;
     margin-right: 40px;
+    margin-top: 30px;
 }
 .work-content{
+
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -300,4 +311,49 @@ footer{
 footer a{
     text-decoration: none;
     color: var(--primary);
+}
+
+
+/*media */
+@media  only screen and (max-width: 600px){
+    header{
+flex-direction: column;    
+    }
+    header > *{
+        margin-bottom: 5px;
+    }
+    
+    /*hero*/
+    section.hero{
+        flex-direction: column;
+        padding: 50px;
+    }
+    /*about*/
+    section.about{
+        flex-direction: column;
+    }
+    .about-desc{
+        margin-left: 0;
+        margin-top: 30px;
+       
+    }
+    /*work*/
+.work-content{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .work-box1{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    /*contact*/
+
+    .contact form input, textarea{
+        width: 100%;
+        
+
+    }
+  
+    
 }
